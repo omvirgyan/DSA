@@ -20,3 +20,6 @@ public class Array4 {
         
     }
 }
+
+//Cloneing can done by using .clone,copyOf(arr,arraylength)
+
