@@ -1,7 +1,8 @@
+//Taking array size and its value as input and print it
 import java.util.*;
 public class Array3 {
     public static void main(String[] args) {
-       System.out.print("ENTER SIZE OF ARRAY");
+       System.out.print("ENTER SIZE OF ARRAY :");
        Scanner sc=new Scanner(System.in);
        int size=sc.nextInt();
        int[] arr=new int[size];
