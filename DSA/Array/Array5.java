@@ -1,4 +1,6 @@
-//Count the number of occurrence and last occurence of particular element X
+//Count the number of occurrence,last occurence 
+// and strictly greater than particular element X
+
 class Array5 {
    static void occurrence(int[] arr,int X){
     int count = 0; boolean found = false;
@@ -14,37 +16,38 @@ class Array5 {
     }
    }
     static void lastOccurence(int[] arr,int X){
-    boolean found = false; int foundAt =0;
+    int lastIndex =-1;
     for(int i=0;i<arr.length;i++){
     if(arr[i]==X){
-        found=true;
-        foundAt=i;
+        lastIndex=i;
     }
    }
-   if(found==true){
-    System.out.println(X+" LastOccurence At "+foundAt);
+   if(lastIndex==-1){
+    System.out.println("Not present");
    }
    else{
-    System.out.println("Not present");
+    System.out.println(X+" LastOccurence At "+lastIndex+ " Index");
+    
+   }
 }
 static void countStricktly(int[] arr,int X){
-    boolean found = false; int foundAt =0;
+   int count = -1;
     for(int i=0;i<arr.length;i++){
-    if(arr[i]==X){
-        found=true;
-        foundAt=i;
+    if(arr[i]> X){
+        count++;
     }
    }
-   if(found==true){
-    System.out.println(X+" LastOccurence At "+foundAt);
+   if(count==-1){
+    System.out.println("No element is strictly greater than "+X);
    }
    else{
-    System.out.println("Not present");
+    System.out.println(count+1+" element is Strictly greater than "+X);
 }
 }
     public static void main(String[] args) {
-        int[] arr = {55,6,77,80,7,6,68,95};
-        occurrence(arr, 6);
-        lastOccurence(arr, 55);
+        int[] arr = {55,6,77,80,7,6,68,3,5,98};
+        occurrence(arr, 95);
+        lastOccurence(arr, 0);
+        countStricktly(arr, 5);
     }
 }
