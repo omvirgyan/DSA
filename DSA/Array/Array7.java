@@ -1,4 +1,5 @@
-//smallest and largest element of given array stored in another array 
+//smallest and largest element and kth smallest and largest
+// of given array stored in another array 
 
 import java.util.Arrays;
 
