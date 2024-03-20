@@ -15,11 +15,32 @@ public class Array15 {
            }
         }
     }
-    static void sortWithoutDoubleLop(int[] array){
-        for(int i=0; i<array.length; i++){
-            if(array[i])
+    static void sortWithoutDoubleLop(int[] array) {
+        int i = 0;
+        int last = array.length - 1;
+        int temp;
+        
+        while (i < last) {
+            // Find the first 1 from the left
+            while (array[i] == 0 && i < last) {
+                i++;
+            }
+            
+            // Find the first 0 from the right
+            while (array[last] == 1 && i < last) {
+                last--;
+            }
+            
+            if (i < last) {
+                // Swap elements
+                temp = array[i];
+                array[i] = array[last];
+                array[last] = temp;
+            }
         }
     }
+    
+    
     static void printArr(int[] array){
         for(int iteam:array){
             System.out.print(iteam+" ");;
@@ -30,7 +51,7 @@ public class Array15 {
         int[] array={1,0,0,1,1,0,1,0,0,0,0,0,1,1,1};
         System.out.println("Array before sorting");
         printArr(array);
-        sort(array);
+        sortWithoutDoubleLop(array);
         System.out.println("\nArray after sorting");
         printArr(array);
     }
