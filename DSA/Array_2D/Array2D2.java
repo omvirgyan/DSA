@@ -26,7 +26,7 @@ public class Array2D2 {
         scanner.close();
     }
 
-    // Method to find the sum of all elements in the matrix
+    // Method to find the sum of all elements in the in given matrix 
     public static int sumOfAllElements(int[][] matrix) {
         int sum = 0;
         for (int[] row : matrix) {
