@@ -31,7 +31,7 @@ public class Array2D3 {
             }
         }
         
-        // Calculate and print the total number of occurrences
+        // Calculate and print the total number of occurrences of particular element
         int totalOccurrences = 0;
         for (int i = 0; i < occurrences.length; i++) {
             totalOccurrences += occurrences[i];
