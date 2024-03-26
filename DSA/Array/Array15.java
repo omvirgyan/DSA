@@ -39,8 +39,6 @@ public class Array15 {
             }
         }
     }
-    
-    
     static void printArr(int[] array){
         for(int iteam:array){
             System.out.print(iteam+" ");;
