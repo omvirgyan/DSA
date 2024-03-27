@@ -26,7 +26,7 @@ public class Array16 {
         for (int item : arr) {
             System.out.print(item + " ");
         }
-        System.out.println(); // Add a new line after printing the array
+        System.out.println(); 
     }
 
     public static void main(String[] args) {
