@@ -20,7 +20,7 @@ public class Array13 {
         for (int item : array) {
             System.out.print(item + " ");
         }
-        System.out.println(); // Print new line after printing the array
+        System.out.println(); 
     }
 
     public static void main(String[] args) {
