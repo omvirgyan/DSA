@@ -9,10 +9,10 @@ public class Array2D7 {
                 {7, 8, 9}
             };
     
-            // Variable to store the sum
+
             int sum = 0;
     
-            // Nested loops to iterate through each element of the 2D array
+    
             for (int i = 0; i < array.length; i++) {
                 for (int j = 0; j < array[i].length; j++) {
                     sum += array[i][j];
