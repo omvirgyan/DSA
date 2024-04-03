@@ -2,7 +2,7 @@ package DSA.Array_2D;
 
 public class Array2D7 {
         public static void main(String[] args) {
-            // 2D array declaration with values
+            
             int[][] array = {
                 {1, 2, 3},
                 {4, 5, 6},
@@ -19,7 +19,7 @@ public class Array2D7 {
                 }
             }
     
-            // Print the sum
+           
             System.out.println("Sum of all elements: " + sum);
         }
     }
