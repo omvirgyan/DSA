@@ -19,7 +19,7 @@ public class Array2D9 {
             }
             topRow++;
 
-            // Print right column
+            
             for (int i = topRow; i <= bottomRow; i++) {
                 System.out.print(matrix[i][rightCol] + " ");
             }
@@ -51,6 +51,6 @@ public class Array2D9 {
             {13, 14, 15, 16}
         };
 
-        spiralPrint(matrix); // Output: 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+        spiralPrint(matrix); 
     }
 }
