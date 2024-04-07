@@ -29,7 +29,7 @@ public class Array2D8 {
         int cols2 = arr2[0].length;
 
         if (cols1 != rows2) {
-            System.out.println("Cannot multiply these matrices. Inner dimensions must match.");
+            System.out.println("Cannot multiply these matrices. ");
             return null;
         }
 
