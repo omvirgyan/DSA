@@ -33,7 +33,7 @@ public class Array2D9 {
                 bottomRow--;
             }
 
-            // Print left column
+            
             if (leftCol <= rightCol) {
                 for (int i = bottomRow; i >= topRow; i--) {
                     System.out.print(matrix[i][leftCol] + " ");
