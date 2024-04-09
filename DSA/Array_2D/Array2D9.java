@@ -25,7 +25,7 @@ public class Array2D9 {
             }
             rightCol--;
 
-            // Print bottom row
+            
             if (topRow <= bottomRow) {
                 for (int i = rightCol; i >= leftCol; i--) {
                     System.out.print(matrix[bottomRow][i] + " ");
