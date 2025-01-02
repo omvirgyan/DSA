@@ -4,14 +4,13 @@ public class factorialOfN {
         if(n==0){
             return 1;
         }
-        int fact=factorial(n-1);
-        int ans=fact*n;
-        return ans;
+        return n*factorial(n-1);
     }
     public static void main(String[] args) {
-        System.out.print("Enter last num:");
+        System.out.print("Enter num:");
         Scanner scanner = new Scanner(System.in);
         int num=scanner.nextInt();
         System.out.println(factorial(num));
+        scanner.close();
     }
 }

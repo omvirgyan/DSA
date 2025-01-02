@@ -1,0 +1,10 @@
+1.  Print Nnatural number from 1 to n. and n to 1.
+2.  Factorial of given number
+3.  Prograamm to find Nth fibonacci number.
+4.  Given an Integer find out out the sum of its digits.
+5.  Count the number of digits in a number using recursion
+6.  Given two number p & q find the value p^q using recursive function
+7.  Mutiple of num till given multi value
+8.  Sum of series till given number
+9.  sum of alternate sign series till given number like alternate sign like:- 1-2+3-4+.....n
+10.
