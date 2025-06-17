@@ -8,13 +8,14 @@ public class lcm {
     //     }
     //     return (x*y)/b;
     // }
-    public static int igcdof(int a, int b){
+    public static int igcdof(int a, int b, int c){
         if(a%b==0){                  // itrative method
             return b;
         }
-           return igcdof(b, a%b);
+           int hcf=igcdof(b, a%b,c);
+              return (c)/hcf;
 }
         public static void main(String[] args) {
-            System.out.println(igcdof(4008979, 221));
+            System.out.println(igcdof(8, 5,8*5));
         }
 }
